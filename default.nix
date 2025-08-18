@@ -42,7 +42,7 @@ let
     buildInputs = [  rpkgs   system_packages   ];
     shellHook = ''
       if [ ! -f pyproject.toml ]; then
-        uv init --python 3.13.6
+        uv init --python 3.13.5
       fi
         uv add --requirements requirements.txt
       # Create alias so 'python' uses uv's environment

@@ -29,7 +29,7 @@ let
 
     shellHook = ''
       # Export LD_LIBRARY is required for python packages that dynamically load libraries, such as numpy
-      export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath (with pkgs; [ zlib stdenv.cc.cc ])}":LD_LIBRARY_PATH;
+      export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath (with pkgs; [ zlib gcc.cc glibc stdenv.cc.cc ])}":LD_LIBRARY_PATH;
 
       if [ ! -f pyproject.toml ]; then
         uv init --python 3.13.5

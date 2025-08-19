@@ -1,9 +1,0 @@
-[project]
-name = "rix-uv"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.13.6"
-dependencies = [
-    "scanpy==1.11.4",
-]
